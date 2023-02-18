@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const day = +prompt('Введите какое-нибудь число месяца')
+
+        if (day <= 0) {
+            alert(`числа ${day} нет в месяце`);
+        } else if (day < 11) {
+            alert(`число ${day} первая декада`);
+        } else if (day < 21) {
+            alert(`число ${day} вторая декада`);
+        } else if (day < 32) {
+            alert(`число ${day} третья декада`);
+        }else if (day > 31) {
+            alert(`числа ${day} нет в месяце`);       
+        }
+    </script>
+</body>
+</html>
